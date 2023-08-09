@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+  color: #222;
+  font-weight: 300;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items{
+  /* border: 1px solid #000; 영역 표시용*/
+  display: flex;
+  text-align: center;
+}
+.item{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ddd;
+  margin: 10px;
+  position: relative; /* 글자의 부모가 됨 */
+}
+.caption{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0,0,0,0.7); /* 글자가 있는 경우 rgba를 사용. 왜냐면 그냥 opacity로 조절 할 경우 글자도 같이 조절이 될 수 있기 떄문에 */
+  color: #fff;
+  padding: 20px 10px;
+  box-sizing: border-box; /* 튀어나오는 거 크기 맞춰 넣기 */
+  line-height: 24px;
+  opacity: 0; /* 처음엔 안 보이고 호버 시에만 보이려고 시작은 0 */
+  transition: 0.5s;
+}
+.item:hover .caption{opacity: 1;}
+
+.caption p:nth-of-type(1){margin: 20px 0;}
+.caption p:nth-of-type(2){margin-bottom: 20px;} /* price viewdetails 사이 간격  */
+
+.caption a{
+  background-color: teal;
+  padding: 7px;
+  border-radius: 3px;
+}
+.caption a:hover{
+  background-color: #fff;
+  color: #000;
+}

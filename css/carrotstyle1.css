@@ -1,0 +1,174 @@
+@import url(common.css);
+@font-face {
+  font-family: 'iceJaram-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;} /* 부드럽게  */
+
+body{
+/*   font-family: 'iceJaram-Rg'; */
+  color: #333;
+}
+
+/* Top Button */
+
+
+/* Header */
+header{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(247, 247, 226);
+}
+nav{
+  width: 1200px;
+  height: inherit;
+  margin: auto; /* 정가운데 */
+  display: flex;
+  justify-content: space-between; /* 양 끝 라인 맞추기( 왼쪽 로고 + 오른쪽 메뉴 )*/
+  align-items: center;
+}
+.gnb{display: flex;}
+
+.gnb li{margin: 0 15px;}
+.gnb li a{
+  font-family: 'Cafe24Ssurround';
+  color: #129900;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.gnb li a:hover{
+  color:orange;
+  }
+
+/* Main_________________________________ */
+main{
+  width: 100%;
+  height: 600px;
+  background: url(../image/main.jpg) no-repeat center top;
+  background-size: cover;
+}
+.mainexplain{
+  height: inherit;
+  display: flex; /* 가로로 글이 배열됨 */
+  flex-direction: column; /* 가로 배열 된 걸 세로 위치 바꾸기 */
+  justify-content: center;
+  align-items: center;
+}
+.mainexplain h1{
+  font-family: 'iceJaram-Rg';
+  color: rgb(247, 247, 226);
+  font-size: 300px;
+  font-weight: 500px;
+  letter-spacing: 50px;
+  text-transform: capitalize;
+}
+.mainexplain strong{
+  font-family: 'iceJaram-Rg';
+  color: #fff;
+  font-weight: 400;
+  font-size: 45px;
+  margin-top: 50px;
+}
+
+/* Section______________________________ */
+section{
+  width: 100%;
+  text-align: center;
+}
+section h2{
+  margin-top: 50px;
+  font-family: 'iceJaram-Rg';
+  font-size: 50px;
+  font-weight: bold;
+}
+section p{
+  font-family: 'iceJaram-Rg';
+  font-size: 25px;
+  font-weight: 700px;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* story1_________ */
+.story1{
+  width: 100%;
+  height: 250px;
+  background-color: rgb(247, 247, 226);
+  margin-top: 50px;
+  font-family: 'iceJaram-Rg';
+  font-size: 30px;
+  font-weight: 700px;
+  margin-top: 20px;
+  color: #555;
+}
+.story1 ul{
+  width: 1200px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.story1 ul li i{ /* icon font */
+  font-size: 60px;
+  color: orange;
+  vertical-align: -5px;
+  }
+
+/* story2_________ */ /* ???????가로 정렬... */
+.story2 {
+  background-color: rgb(247, 247, 226);
+  font-family: 'iceJaram-Rg';
+  font-size: 30px;
+  font-weight: 700px;
+  margin-top: 20px;
+  color: #555;
+}
+.story2 li{
+  display: flex;
+  width: 1200px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.story2 a{
+  width: 1200px;
+  height: 300px;
+  position: absolute;
+}
+
+/* recipe___ */
+
+
+  /* footer_________ */
+  footer{
+    background-color: rgb(247, 247, 226);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  address{
+    font-style: normal; 
+    color: #888;
+    font-weight: lighter;
+  }
+  address span{
+    font-family: 'iceJaram-Rg';
+    color: orange;
+    font-weight: bold; 
+    font-size: 20px;
+    padding: 5px;
+  }
